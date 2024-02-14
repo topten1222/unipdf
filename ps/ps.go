@@ -14,7 +14,7 @@
 //
 // Package ps implements various functionalities needed for handling Postscript for PDF uses, in particular
 // for PDF function type 4.
-package ps ;import (_ggd "bufio";_gg "bytes";_d "errors";_eg "fmt";_a "github.com/unidoc/unipdf/v3/common";_af "github.com/unidoc/unipdf/v3/core";_g "io";_gf "math";);func (_agdf *PSOperand )gt (_bga *PSStack )error {_bac ,_dad :=_bga .PopNumberAsFloat64 ();
+package ps ;import (_ggd "bufio";_gg "bytes";_d "errors";_eg "fmt";_a "github.com/topten1222/unipdf/v3/common";_af "github.com/topten1222/unipdf/v3/core";_g "io";_gf "math";);func (_agdf *PSOperand )gt (_bga *PSStack )error {_bac ,_dad :=_bga .PopNumberAsFloat64 ();
 if _dad !=nil {return _dad ;};_fcg ,_dad :=_bga .PopNumberAsFloat64 ();if _dad !=nil {return _dad ;};if _gf .Abs (_fcg -_bac )< _dc {_aed :=_bga .Push (MakeBool (false ));return _aed ;}else if _fcg > _bac {_abb :=_bga .Push (MakeBool (true ));return _abb ;
 }else {_eddd :=_bga .Push (MakeBool (false ));return _eddd ;};};
 

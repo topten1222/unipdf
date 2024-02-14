@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package colorprofile ;import (_e "bytes";_b "compress/gzip";_eg "encoding/hex";_d "errors";_ad "fmt";_ab "github.com/unidoc/unipdf/v3/model";_ac "io";_c "io/ioutil";_df "os";_ed "path/filepath";_a "strconv";_egb "strings";_f "time";);func RestoreAsset (dir ,name string )error {_bbd ,_cga :=Asset (name );
+package colorprofile ;import (_e "bytes";_b "compress/gzip";_eg "encoding/hex";_d "errors";_ad "fmt";_ab "github.com/topten1222/unipdf/v3/model";_ac "io";_c "io/ioutil";_df "os";_ed "path/filepath";_a "strconv";_egb "strings";_f "time";);func RestoreAsset (dir ,name string )error {_bbd ,_cga :=Asset (name );
 if _cga !=nil {return _cga ;};_aeee ,_cga :=AssetInfo (name );if _cga !=nil {return _cga ;};_cga =_df .MkdirAll (_cgb (dir ,_ed .Dir (name )),_df .FileMode (0755));if _cga !=nil {return _cga ;};_cga =_c .WriteFile (_cgb (dir ,name ),_bbd ,_aeee .Mode ());
 if _cga !=nil {return _cga ;};_cga =_df .Chtimes (_cgb (dir ,name ),_aeee .ModTime (),_aeee .ModTime ());if _cga !=nil {return _cga ;};return nil ;};func _ggc ()(*asset ,error ){_gbb ,_ggd :=_be ();if _ggd !=nil {return nil ,_ggd ;};_aaf :=bindataFileInfo {_cc :"\u0073\u0052\u0047\u0042\u005f\u0076\u0034\u005f\u0049\u0043\u0043_\u0070\u0072\u0065\u0066\u0065\u0072\u0065\u006e\u0063\u0065.\u0069\u0063\u0063",_db :60960,_ag :_df .FileMode (436),_cbc :_f .Unix (1628763334,0)};
 _eae :=&asset {_fd :_gbb ,_ae :_aaf };return _eae ,nil ;};func ParseHeader (data []byte )(ProfileHeader ,error ){if len (data )< 128{return ProfileHeader {},_d .New ("\u0069\u006e\u0076\u0061li\u0064\u0020\u0049\u0043\u0043\u0020\u0050\u0072\u006f\u0066\u0069\u006c\u0065");

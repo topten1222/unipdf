@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package imagerender ;import (_ca "errors";_ab "fmt";_ed "github.com/unidoc/freetype/raster";_ec "github.com/unidoc/unipdf/v3/common";_e "github.com/unidoc/unipdf/v3/internal/transform";_adf "github.com/unidoc/unipdf/v3/render/internal/context";_f "golang.org/x/image/draw";
+package imagerender ;import (_ca "errors";_ab "fmt";_ed "github.com/unidoc/freetype/raster";_ec "github.com/topten1222/unipdf/v3/common";_e "github.com/topten1222/unipdf/v3/internal/transform";_adf "github.com/topten1222/unipdf/v3/render/internal/context";_f "golang.org/x/image/draw";
 _ga "golang.org/x/image/font";_ff "golang.org/x/image/math/f64";_gf "golang.org/x/image/math/fixed";_ad "image";_ce "image/color";_g "image/draw";_d "math";_af "sort";_c "strings";);func (_ede *Context )SetStrokeStyle (pattern _adf .Pattern ){_ede ._gbf =pattern };
 func _ge (_ba ,_db ,_cd ,_gaf ,_cee ,_gc ,_ac ,_dde ,_cec float64 )(_gaa ,_bd float64 ){_fga :=1-_cec ;_ege :=_fga *_fga *_fga ;_be :=3*_fga *_fga *_cec ;_egc :=3*_fga *_cec *_cec ;_fgcf :=_cec *_cec *_cec ;_gaa =_ege *_ba +_be *_cd +_egc *_cee +_fgcf *_ac ;
 _bd =_ege *_db +_be *_gaf +_egc *_gc +_fgcf *_dde ;return ;};func (_fba *Context )SetFillStyle (pattern _adf .Pattern ){if _dfab ,_bbde :=pattern .(*solidPattern );_bbde {_fba ._acc =_dfab ._fcg ;};_fba ._adb =pattern ;};func (_adbc *Context )SetPixel (x ,y int ){_adbc ._gfd .Set (x ,y ,_adbc ._acc )};

@@ -202,7 +202,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   http://www.apache.org/licenses/LICENSE-2.0
 
   The native Go-XMP SDK was used as a core of the XMP utilities in the package 
-  `github.com/unidoc/unipdf/model/xmputil`.
+  `github.com/topten1222/unipdf/model/xmputil`.
 
 * [CCITTFax Decoder](https://github.com/haraldk/TwelveMonkeys/blob/master/imageio/imageio-tiff/src/main/java/com/twelvemonkeys/imageio/plugins/tiff/CCITTFaxDecoderStream.java), Copyright (c) 2008-2020, Harald Kuhr
   All rights reserved.

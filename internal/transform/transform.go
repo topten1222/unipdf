@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package transform ;import (_g "fmt";_f "github.com/unidoc/unipdf/v3/common";_a "math";);func IdentityMatrix ()Matrix {return NewMatrix (1,0,0,1,0,0)};const _gd =1e-10;func NewMatrixFromTransforms (xScale ,yScale ,theta ,tx ,ty float64 )Matrix {return IdentityMatrix ().Scale (xScale ,yScale ).Rotate (theta ).Translate (tx ,ty );
+package transform ;import (_g "fmt";_f "github.com/topten1222/unipdf/v3/common";_a "math";);func IdentityMatrix ()Matrix {return NewMatrix (1,0,0,1,0,0)};const _gd =1e-10;func NewMatrixFromTransforms (xScale ,yScale ,theta ,tx ,ty float64 )Matrix {return IdentityMatrix ().Scale (xScale ,yScale ).Rotate (theta ).Translate (tx ,ty );
 };func ScaleMatrix (x ,y float64 )Matrix {return NewMatrix (x ,0,0,y ,0,0)};func (_da Matrix )Translate (tx ,ty float64 )Matrix {return _da .Mult (TranslationMatrix (tx ,ty ))};type Matrix [9]float64 ;func (_ea Matrix )Round (precision float64 )Matrix {for _d :=range _ea {_ea [_d ]=_a .Round (_ea [_d ]/precision )*precision ;
 };return _ea ;};func NewMatrix (a ,b ,c ,d ,tx ,ty float64 )Matrix {_bf :=Matrix {a ,b ,0,c ,d ,0,tx ,ty ,1};_bf .clampRange ();return _bf ;};type Point struct{X float64 ;Y float64 ;};func (_gbe Matrix )Angle ()float64 {_fa :=_a .Atan2 (-_gbe [1],_gbe [0]);
 if _fa < 0.0{_fa +=2*_a .Pi ;};return _fa /_a .Pi *180.0;};func (_ag *Matrix )Set (a ,b ,c ,d ,tx ,ty float64 ){_ag [0],_ag [1]=a ,b ;_ag [3],_ag [4]=c ,d ;_ag [6],_ag [7]=tx ,ty ;_ag .clampRange ();};func (_cd Point )Interpolate (b Point ,t float64 )Point {return Point {X :(1-t )*_cd .X +t *b .X ,Y :(1-t )*_cd .Y +t *b .Y };

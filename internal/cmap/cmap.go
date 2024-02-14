@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package cmap ;import (_e "bufio";_bb "bytes";_d "encoding/hex";_cb "errors";_be "fmt";_da "github.com/unidoc/unipdf/v3/common";_bce "github.com/unidoc/unipdf/v3/core";_g "github.com/unidoc/unipdf/v3/internal/cmap/bcmaps";_c "io";_bc "sort";_ba "strconv";
+package cmap ;import (_e "bufio";_bb "bytes";_d "encoding/hex";_cb "errors";_be "fmt";_da "github.com/topten1222/unipdf/v3/common";_bce "github.com/topten1222/unipdf/v3/core";_g "github.com/topten1222/unipdf/v3/internal/cmap/bcmaps";_c "io";_bc "sort";_ba "strconv";
 _eg "strings";_bg "unicode/utf16";);func LoadPredefinedCMap (name string )(*CMap ,error ){cmap ,_fc :=_abe (name );if _fc !=nil {return nil ,_fc ;};if cmap ._f ==""{cmap .computeInverseMappings ();return cmap ,nil ;};_bed ,_fc :=_abe (cmap ._f );if _fc !=nil {return nil ,_fc ;
 };for _fdd ,_ab :=range _bed ._ff {if _ ,_ecg :=cmap ._ff [_fdd ];!_ecg {cmap ._ff [_fdd ]=_ab ;};};cmap ._ec =append (cmap ._ec ,_bed ._ec ...);cmap .computeInverseMappings ();return cmap ,nil ;};func (cmap *CMap )parseCodespaceRange ()error {for {_aaec ,_dbf :=cmap .parseObject ();
 if _dbf !=nil {if _dbf ==_c .EOF {break ;};return _dbf ;};_aag ,_fdef :=_aaec .(cmapHexString );if !_fdef {if _dcda ,_gaa :=_aaec .(cmapOperand );_gaa {if _dcda .Operand ==_ecbc {return nil ;};return _cb .New ("\u0075n\u0065x\u0070\u0065\u0063\u0074\u0065d\u0020\u006fp\u0065\u0072\u0061\u006e\u0064");

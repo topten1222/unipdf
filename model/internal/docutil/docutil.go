@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package docutil ;import (_f "errors";_d "fmt";_db "github.com/unidoc/unipdf/v3/common";_b "github.com/unidoc/unipdf/v3/core";);func (_fac *Catalog )SetMarkInfo (mi _b .PdfObject ){_ba :=_b .MakeIndirectObject (mi );_fac .Object .Set ("\u004d\u0061\u0072\u006b\u0049\u006e\u0066\u006f",_ba );
+package docutil ;import (_f "errors";_d "fmt";_db "github.com/topten1222/unipdf/v3/common";_b "github.com/topten1222/unipdf/v3/core";);func (_fac *Catalog )SetMarkInfo (mi _b .PdfObject ){_ba :=_b .MakeIndirectObject (mi );_fac .Object .Set ("\u004d\u0061\u0072\u006b\u0049\u006e\u0066\u006f",_ba );
 _fac ._a .Objects =append (_fac ._a .Objects ,_ba );};type Document struct{ID [2]string ;Version _b .Version ;Objects []_b .PdfObject ;Info _b .PdfObject ;Crypt *_b .PdfCrypt ;UseHashBasedID bool ;};func (_dbc *Catalog )GetMetadata ()(*_b .PdfObjectStream ,bool ){_ac ,_cd :=_b .GetStream (_dbc .Object .Get ("\u004d\u0065\u0074\u0061\u0064\u0061\u0074\u0061"));
 return _ac ,_cd ;};func (_ebc Content )GetData ()([]byte ,error ){_gecb ,_fcf :=_b .NewEncoderFromStream (_ebc .Stream );if _fcf !=nil {return nil ,_fcf ;};_fcdc ,_fcf :=_gecb .DecodeStream (_ebc .Stream );if _fcf !=nil {return nil ,_fcf ;};return _fcdc ,nil ;
 };func (_bdc *Content )SetData (data []byte )error {_efe ,_afdc :=_b .MakeStream (data ,_b .NewFlateEncoder ());if _afdc !=nil {return _afdc ;};_gag ,_dfd :=_b .GetArray (_bdc ._gec .Object .Get ("\u0043\u006f\u006e\u0074\u0065\u006e\u0074\u0073"));if !_dfd &&_bdc ._def ==0{_bdc ._gec .Object .Set ("\u0043\u006f\u006e\u0074\u0065\u006e\u0074\u0073",_efe );

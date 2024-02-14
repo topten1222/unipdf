@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package svg ;import (_bg "encoding/xml";_b "fmt";_be "github.com/unidoc/unipdf/v3/common";_fc "github.com/unidoc/unipdf/v3/contentstream";_gf "github.com/unidoc/unipdf/v3/contentstream/draw";_gd "github.com/unidoc/unipdf/v3/internal/graphic2d";_ab "golang.org/x/net/html/charset";
+package svg ;import (_bg "encoding/xml";_b "fmt";_be "github.com/topten1222/unipdf/v3/common";_fc "github.com/topten1222/unipdf/v3/contentstream";_gf "github.com/topten1222/unipdf/v3/contentstream/draw";_gd "github.com/topten1222/unipdf/v3/internal/graphic2d";_ab "golang.org/x/net/html/charset";
 _g "io";_f "math";_ac "os";_af "strconv";_a "strings";_d "unicode";);func _gfeg (_cae []token )([]*Command ,error ){var (_eeeg []*Command ;_aaga []float64 ;);for _efe :=len (_cae )-1;_efe >=0;_efe --{_aca :=_cae [_efe ];if _aca ._gda {_dgf :=_bgd ._cad [_a .ToLower (_aca ._dbb )];
 _fff :=len (_aaga );if _dgf ==0&&_fff ==0{_ggg :=&Command {Symbol :_aca ._dbb };_eeeg =append ([]*Command {_ggg },_eeeg ...);}else if _dgf !=0&&_fff %_dgf ==0{_faae :=_fff /_dgf ;for _dcg :=0;_dcg < _faae ;_dcg ++{_eeg :=_aca ._dbb ;if _eeg =="\u006d"&&_dcg < _faae -1{_eeg ="\u006c";
 };if _eeg =="\u004d"&&_dcg < _faae -1{_eeg ="\u004c";};_ccg :=&Command {_eeg ,_bcfd (_aaga [:_dgf ])};_eeeg =append ([]*Command {_ccg },_eeeg ...);_aaga =_aaga [_dgf :];};}else {_egag :=pathParserError {"I\u006e\u0063\u006f\u0072\u0072\u0065c\u0074\u0020\u006e\u0075\u006d\u0062e\u0072\u0020\u006f\u0066\u0020\u0070\u0061r\u0061\u006d\u0065\u0074\u0065\u0072\u0073\u0020\u0066\u006fr\u0020"+_aca ._dbb };

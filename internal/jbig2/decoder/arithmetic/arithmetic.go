@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package arithmetic ;import (_ce "fmt";_gc "github.com/unidoc/unipdf/v3/common";_d "github.com/unidoc/unipdf/v3/internal/bitwise";_b "github.com/unidoc/unipdf/v3/internal/jbig2/internal";_f "io";_g "strings";);func (_bf *Decoder )readByte ()error {if _bf ._dg .AbsolutePosition ()> _bf ._gd {if _ ,_gab :=_bf ._dg .Seek (-1,_f .SeekCurrent );
+package arithmetic ;import (_ce "fmt";_gc "github.com/topten1222/unipdf/v3/common";_d "github.com/topten1222/unipdf/v3/internal/bitwise";_b "github.com/topten1222/unipdf/v3/internal/jbig2/internal";_f "io";_g "strings";);func (_bf *Decoder )readByte ()error {if _bf ._dg .AbsolutePosition ()> _bf ._gd {if _ ,_gab :=_bf ._dg .Seek (-1,_f .SeekCurrent );
 _gab !=nil {return _gab ;};};_bc ,_cg :=_bf ._dg .ReadByte ();if _cg !=nil {return _cg ;};_bf ._fd =_bc ;if _bf ._fd ==0xFF{_cgd ,_cede :=_bf ._dg .ReadByte ();if _cede !=nil {return _cede ;};if _cgd > 0x8F{_bf ._gg +=0xFF00;_bf ._ef =8;if _ ,_ea :=_bf ._dg .Seek (-2,_f .SeekCurrent );
 _ea !=nil {return _ea ;};}else {_bf ._gg +=uint64 (_cgd )<<9;_bf ._ef =7;};}else {_bc ,_cg =_bf ._dg .ReadByte ();if _cg !=nil {return _cg ;};_bf ._fd =_bc ;_bf ._gg +=uint64 (_bf ._fd )<<8;_bf ._ef =8;};_bf ._gg &=0xFFFFFFFFFF;return nil ;};func (_fg *Decoder )mpsExchange (_gfa *DecoderStats ,_fee int32 )int {_bec :=_gfa ._bdb [_gfa ._cd ];
 if _fg ._eg < _e [_fee ][0]{if _e [_fee ][3]==1{_gfa .toggleMps ();};_gfa .setEntry (int (_e [_fee ][2]));return int (1-_bec );};_gfa .setEntry (int (_e [_fee ][1]));return int (_bec );};func (_fea *DecoderStats )Copy ()*DecoderStats {_bfd :=&DecoderStats {_bd :_fea ._bd ,_fgf :make ([]byte ,_fea ._bd )};

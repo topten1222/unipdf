@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package huffman ;import (_g "errors";_af "fmt";_f "github.com/unidoc/unipdf/v3/internal/bitwise";_a "github.com/unidoc/unipdf/v3/internal/jbig2/internal";_ffg "math";_ff "strings";);type InternalNode struct{_gbf int32 ;_dfc Node ;_bcda Node ;};func (_c *EncodedTable )InitTree (codeTable []*Code )error {_gda (codeTable );
+package huffman ;import (_g "errors";_af "fmt";_f "github.com/topten1222/unipdf/v3/internal/bitwise";_a "github.com/topten1222/unipdf/v3/internal/jbig2/internal";_ffg "math";_ff "strings";);type InternalNode struct{_gbf int32 ;_dfc Node ;_bcda Node ;};func (_c *EncodedTable )InitTree (codeTable []*Code )error {_gda (codeTable );
 for _ ,_aa :=range codeTable {if _e :=_c ._gb .append (_aa );_e !=nil {return _e ;};};return nil ;};type Node interface{Decode (_fgag *_f .Reader )(int64 ,error );String ()string ;};func (_agd *ValueNode )Decode (r *_f .Reader )(int64 ,error ){_gc ,_ggf :=r .ReadBits (byte (_agd ._ead ));
 if _ggf !=nil {return 0,_ggf ;};if _agd ._edc {_gc =-_gc ;};return int64 (_agd ._bcd )+int64 (_gc ),nil ;};func (_ecg *StandardTable )String ()string {return _ecg ._bdc .String ()+"\u000a"};func _gda (_ecga []*Code ){var _caf int32 ;for _ ,_bgb :=range _ecga {_caf =_ceb (_caf ,_bgb ._ada );
 };_ccd :=make ([]int32 ,_caf +1);for _ ,_agdg :=range _ecga {_ccd [_agdg ._ada ]++;};var _fd int32 ;_gad :=make ([]int32 ,len (_ccd )+1);_ccd [0]=0;for _cd :=int32 (1);_cd <=int32 (len (_ccd ));_cd ++{_gad [_cd ]=(_gad [_cd -1]+(_ccd [_cd -1]))<<1;_fd =_gad [_cd ];

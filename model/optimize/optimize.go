@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package optimize ;import (_df "bytes";_ce "crypto/md5";_e "errors";_ac "fmt";_f "github.com/unidoc/unipdf/v3/common";_bf "github.com/unidoc/unipdf/v3/contentstream";_ba "github.com/unidoc/unipdf/v3/core";_d "github.com/unidoc/unipdf/v3/extractor";_fg "github.com/unidoc/unipdf/v3/internal/imageutil";
-_cf "github.com/unidoc/unipdf/v3/internal/textencoding";_cff "github.com/unidoc/unipdf/v3/model";_gc "github.com/unidoc/unitype";_c "golang.org/x/image/draw";_b "math";_a "strings";);
+package optimize ;import (_df "bytes";_ce "crypto/md5";_e "errors";_ac "fmt";_f "github.com/topten1222/unipdf/v3/common";_bf "github.com/topten1222/unipdf/v3/contentstream";_ba "github.com/topten1222/unipdf/v3/core";_d "github.com/topten1222/unipdf/v3/extractor";_fg "github.com/topten1222/unipdf/v3/internal/imageutil";
+_cf "github.com/topten1222/unipdf/v3/internal/textencoding";_cff "github.com/topten1222/unipdf/v3/model";_gc "github.com/unidoc/unitype";_c "golang.org/x/image/draw";_b "math";_a "strings";);
 
 // Optimize optimizes PDF objects to decrease PDF size.
 func (_efeb *CleanFonts )Optimize (objects []_ba .PdfObject )(_ee []_ba .PdfObject ,_cbbf error ){var _gec map[*_ba .PdfObjectStream ]struct{};if _efeb .Subset {var _gfga error ;_gec ,_gfga =_egf (objects );if _gfga !=nil {_f .Log .Debug ("\u0045\u0052\u0052\u004fR\u003a\u0020\u0046\u0061\u0069\u006c\u0065\u0064\u0020\u0073u\u0062s\u0065\u0074\u0074\u0069\u006e\u0067\u003a \u0025\u0076",_gfga );

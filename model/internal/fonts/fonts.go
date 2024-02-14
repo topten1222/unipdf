@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package fonts ;import (_bf "bytes";_e "encoding/binary";_b "errors";_d "fmt";_fe "github.com/unidoc/unipdf/v3/common";_c "github.com/unidoc/unipdf/v3/core";_be "github.com/unidoc/unipdf/v3/internal/cmap";_bfg "github.com/unidoc/unipdf/v3/internal/textencoding";
+package fonts ;import (_bf "bytes";_e "encoding/binary";_b "errors";_d "fmt";_fe "github.com/topten1222/unipdf/v3/common";_c "github.com/topten1222/unipdf/v3/core";_be "github.com/topten1222/unipdf/v3/internal/cmap";_bfg "github.com/topten1222/unipdf/v3/internal/textencoding";
 _fd "io";_f "os";_gd "regexp";_da "sort";_a "strings";_eb "sync";);func (_de *RuneCharSafeMap )Copy ()*RuneCharSafeMap {_cbg :=MakeRuneCharSafeMap (_de .Length ());_de .Range (func (_ebc rune ,_bb CharMetrics )(_ba bool ){_cbg ._cb [_ebc ]=_bb ;return false });
 return _cbg ;};func _edf ()StdFont {_fecg :=_bfg .NewSymbolEncoder ();_fee :=Descriptor {Name :SymbolName ,Family :string (SymbolName ),Weight :FontWeightMedium ,Flags :0x0004,BBox :[4]float64 {-180,-293,1090,1010},ItalicAngle :0,Ascent :0,Descent :0,CapHeight :0,XHeight :0,StemV :85,StemH :92};
 return NewStdFontWithEncoding (_fee ,_dbd ,_fecg );};type ttfParser struct{_gbedf TtfType ;_fdbe _fd .ReadSeeker ;_fddc map[string ]uint32 ;_dac uint16 ;_aegc uint16 ;};type StdFont struct{_gb Descriptor ;_fa *RuneCharSafeMap ;_fc _bfg .TextEncoder ;};

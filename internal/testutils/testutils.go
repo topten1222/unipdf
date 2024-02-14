@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package testutils ;import (_d "crypto/md5";_bb "encoding/hex";_db "errors";_b "fmt";_fg "github.com/unidoc/unipdf/v3/common";_cf "github.com/unidoc/unipdf/v3/core";_eg "image";_efa "image/png";_c "io";_ef "os";_gg "os/exec";_g "path/filepath";_e "strings";
+package testutils ;import (_d "crypto/md5";_bb "encoding/hex";_db "errors";_b "fmt";_fg "github.com/topten1222/unipdf/v3/common";_cf "github.com/topten1222/unipdf/v3/core";_eg "image";_efa "image/png";_c "io";_ef "os";_gg "os/exec";_g "path/filepath";_e "strings";
 _dg "testing";);func RenderPDFToPNGs (pdfPath string ,dpi int ,outpathTpl string )error {if dpi <=0{dpi =100;};if _ ,_gcd :=_gg .LookPath ("\u0067\u0073");_gcd !=nil {return ErrRenderNotSupported ;};return _gg .Command ("\u0067\u0073","\u002d\u0073\u0044\u0045\u0056\u0049\u0043\u0045\u003d\u0070\u006e\u0067a\u006c\u0070\u0068\u0061","\u002d\u006f",outpathTpl ,_b .Sprintf ("\u002d\u0072\u0025\u0064",dpi ),pdfPath ).Run ();
 };func ComparePNGFiles (file1 ,file2 string )(bool ,error ){_fgb ,_gff :=HashFile (file1 );if _gff !=nil {return false ,_gff ;};_fb ,_gff :=HashFile (file2 );if _gff !=nil {return false ,_gff ;};if _fgb ==_fb {return true ,nil ;};_gca ,_gff :=ReadPNG (file1 );
 if _gff !=nil {return false ,_gff ;};_efg ,_gff :=ReadPNG (file2 );if _gff !=nil {return false ,_gff ;};if _gca .Bounds ()!=_efg .Bounds (){return false ,nil ;};return CompareImages (_gca ,_efg );};func HashFile (file string )(string ,error ){_df ,_aa :=_ef .Open (file );

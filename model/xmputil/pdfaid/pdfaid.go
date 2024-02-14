@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package pdfaid ;import (_g "fmt";_e "github.com/trimmer-io/go-xmp/xmp";_ga "github.com/unidoc/unipdf/v3/model/xmputil/pdfaextension";);
+package pdfaid ;import (_g "fmt";_e "github.com/trimmer-io/go-xmp/xmp";_ga "github.com/topten1222/unipdf/v3/model/xmputil/pdfaextension";);
 
 // SyncFromXMP implements xmp.Model interface.
 func (_bf *Model )SyncFromXMP (d *_e .Document )error {return nil };func init (){_e .Register (Namespace ,_e .XmpMetadata );_ga .RegisterSchema (Namespace ,&Schema )};var _ _e .Model =(*Model )(nil );

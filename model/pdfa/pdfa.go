@@ -13,9 +13,9 @@
 // NOTE: This implementation is in experimental development state.
 // 	Keep in mind that it might change in the subsequent minor versions.
 package pdfa ;import (_ea "errors";_b "fmt";_ee "github.com/adrg/sysfont";_da "github.com/trimmer-io/go-xmp/models/dc";_bfg "github.com/trimmer-io/go-xmp/models/pdf";_gf "github.com/trimmer-io/go-xmp/models/xmp_base";_ac "github.com/trimmer-io/go-xmp/models/xmp_mm";
-_bc "github.com/trimmer-io/go-xmp/models/xmp_rights";_eb "github.com/trimmer-io/go-xmp/xmp";_eg "github.com/unidoc/unipdf/v3/common";_df "github.com/unidoc/unipdf/v3/contentstream";_cb "github.com/unidoc/unipdf/v3/core";_cd "github.com/unidoc/unipdf/v3/internal/cmap";
-_dbg "github.com/unidoc/unipdf/v3/internal/imageutil";_egd "github.com/unidoc/unipdf/v3/internal/timeutils";_db "github.com/unidoc/unipdf/v3/model";_ebb "github.com/unidoc/unipdf/v3/model/internal/colorprofile";_f "github.com/unidoc/unipdf/v3/model/internal/docutil";
-_acd "github.com/unidoc/unipdf/v3/model/internal/fonts";_fcg "github.com/unidoc/unipdf/v3/model/xmputil";_eee "github.com/unidoc/unipdf/v3/model/xmputil/pdfaextension";_fc "github.com/unidoc/unipdf/v3/model/xmputil/pdfaid";_e "image/color";_bf "math";_a "sort";
+_bc "github.com/trimmer-io/go-xmp/models/xmp_rights";_eb "github.com/trimmer-io/go-xmp/xmp";_eg "github.com/topten1222/unipdf/v3/common";_df "github.com/topten1222/unipdf/v3/contentstream";_cb "github.com/topten1222/unipdf/v3/core";_cd "github.com/topten1222/unipdf/v3/internal/cmap";
+_dbg "github.com/topten1222/unipdf/v3/internal/imageutil";_egd "github.com/topten1222/unipdf/v3/internal/timeutils";_db "github.com/topten1222/unipdf/v3/model";_ebb "github.com/topten1222/unipdf/v3/model/internal/colorprofile";_f "github.com/topten1222/unipdf/v3/model/internal/docutil";
+_acd "github.com/topten1222/unipdf/v3/model/internal/fonts";_fcg "github.com/topten1222/unipdf/v3/model/xmputil";_eee "github.com/topten1222/unipdf/v3/model/xmputil/pdfaextension";_fc "github.com/topten1222/unipdf/v3/model/xmputil/pdfaid";_e "image/color";_bf "math";_a "sort";
 _g "strings";_c "time";);func _dcab (_gbbg *_db .CompliancePdfReader )ViolatedRule {return _ce };func _eddd (_fdbed *_db .CompliancePdfReader )(_ebfd []ViolatedRule ){return _ebfd };func _be ()standardType {return standardType {_ed :2,_fd :"\u0055"}};
 
 // NewProfile2U creates a new Profile2U with the given options.

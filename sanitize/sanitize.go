@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sanitize ;import (_e "github.com/unidoc/unipdf/v3/common";_g "github.com/unidoc/unipdf/v3/core";);
+package sanitize ;import (_e "github.com/topten1222/unipdf/v3/common";_g "github.com/topten1222/unipdf/v3/core";);
 
 // SanitizationOpts specifies the objects to be removed during sanitization.
 type SanitizationOpts struct{

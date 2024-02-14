@@ -10,8 +10,8 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package xmputil provides abstraction used by the pdf document XMP Metadata.
-package xmputil ;import (_bd "errors";_fe "fmt";_be "github.com/trimmer-io/go-xmp/models/pdf";_db "github.com/trimmer-io/go-xmp/models/xmp_mm";_b "github.com/trimmer-io/go-xmp/xmp";_aab "github.com/unidoc/unipdf/v3/core";_ac "github.com/unidoc/unipdf/v3/internal/timeutils";
-_aa "github.com/unidoc/unipdf/v3/internal/uuid";_ba "github.com/unidoc/unipdf/v3/model/xmputil/pdfaextension";_g "github.com/unidoc/unipdf/v3/model/xmputil/pdfaid";_d "strconv";_a "time";);
+package xmputil ;import (_bd "errors";_fe "fmt";_be "github.com/trimmer-io/go-xmp/models/pdf";_db "github.com/trimmer-io/go-xmp/models/xmp_mm";_b "github.com/trimmer-io/go-xmp/xmp";_aab "github.com/topten1222/unipdf/v3/core";_ac "github.com/topten1222/unipdf/v3/internal/timeutils";
+_aa "github.com/topten1222/unipdf/v3/internal/uuid";_ba "github.com/topten1222/unipdf/v3/model/xmputil/pdfaextension";_g "github.com/topten1222/unipdf/v3/model/xmputil/pdfaid";_d "strconv";_a "time";);
 
 // MediaManagementVersion is the version of the media management xmp metadata.
 type MediaManagementVersion struct{VersionID string ;ModifyDate _a .Time ;Comments string ;Modifier string ;};

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package bitwise ;import (_b "encoding/binary";_g "errors";_aa "fmt";_ae "github.com/unidoc/unipdf/v3/common";_d "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_ag "io";);var _ _ag .ByteWriter =&BufferedWriter {};func (_cca *Writer )Data ()[]byte {return _cca ._ccgg };
+package bitwise ;import (_b "encoding/binary";_g "errors";_aa "fmt";_ae "github.com/topten1222/unipdf/v3/common";_d "github.com/topten1222/unipdf/v3/internal/jbig2/errors";_ag "io";);var _ _ag .ByteWriter =&BufferedWriter {};func (_cca *Writer )Data ()[]byte {return _cca ._ccgg };
 func (_ca *BufferedWriter )WriteByte (bt byte )error {if _ca ._dc > len (_ca ._add )-1||(_ca ._dc ==len (_ca ._add )-1&&_ca ._adb !=0){_ca .expandIfNeeded (1);};_ca .writeByte (bt );return nil ;};func (_aea *BufferedWriter )tryGrowByReslice (_eac int )bool {if _efa :=len (_aea ._add );
 _eac <=cap (_aea ._add )-_efa {_aea ._add =_aea ._add [:_efa +_eac ];return true ;};return false ;};func (_eaf *BufferedWriter )expandIfNeeded (_fd int ){if !_eaf .tryGrowByReslice (_fd ){_eaf .grow (_fd );};};func (_agd *Reader )ReadUint32 ()(uint32 ,error ){_bdc :=make ([]byte ,4);
 _ ,_cg :=_agd .Read (_bdc );if _cg !=nil {return 0,_cg ;};return _b .BigEndian .Uint32 (_bdc ),nil ;};var _ BinaryWriter =&Writer {};func (_fdde *Reader )readBufferByte ()(byte ,error ){if _fdde ._gba >=int64 (_fdde ._ec ._ecf ){return 0,_ag .EOF ;};_fdde ._acc =-1;

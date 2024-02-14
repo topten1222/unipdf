@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package crypt ;import (_a "crypto/aes";_fg "crypto/cipher";_ae "crypto/md5";_aa "crypto/rand";_d "crypto/rc4";_g "fmt";_dg "github.com/unidoc/unipdf/v3/common";_dc "github.com/unidoc/unipdf/v3/core/security";_e "io";);func init (){_gf ("\u0041\u0045\u0053V\u0032",_fc )};
+package crypt ;import (_a "crypto/aes";_fg "crypto/cipher";_ae "crypto/md5";_aa "crypto/rand";_d "crypto/rc4";_g "fmt";_dg "github.com/topten1222/unipdf/v3/common";_dc "github.com/topten1222/unipdf/v3/core/security";_e "io";);func init (){_gf ("\u0041\u0045\u0053V\u0032",_fc )};
 
 
 // NewFilterV2 creates a RC4-based filter with a specified key length (in bytes).

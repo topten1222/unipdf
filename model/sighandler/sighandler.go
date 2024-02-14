@@ -11,7 +11,7 @@
 
 // Package sighandler implements digital signature handlers for PDF signature validation and signing.
 package sighandler ;import (_dc "bytes";_ff "crypto";_ba "crypto/rand";_ca "crypto/rsa";_df "crypto/x509";_d "crypto/x509/pkix";_ad "encoding/asn1";_f "encoding/hex";_b "errors";_ce "fmt";_ga "github.com/unidoc/pkcs7";_dfa "github.com/unidoc/timestamp";
-_dd "github.com/unidoc/unipdf/v3/common";_da "github.com/unidoc/unipdf/v3/core";_fe "github.com/unidoc/unipdf/v3/model";_dg "github.com/unidoc/unipdf/v3/model/mdp";_e "github.com/unidoc/unipdf/v3/model/sigutil";_cc "hash";_g "math/big";_a "strings";_cd "time";
+_dd "github.com/topten1222/unipdf/v3/common";_da "github.com/topten1222/unipdf/v3/core";_fe "github.com/topten1222/unipdf/v3/model";_dg "github.com/topten1222/unipdf/v3/model/mdp";_e "github.com/topten1222/unipdf/v3/model/sigutil";_cc "hash";_g "math/big";_a "strings";_cd "time";
 );
 
 // Sign adds a new reference to signature's references array.

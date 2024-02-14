@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package mmr ;import (_d "errors";_fd "fmt";_fc "github.com/unidoc/unipdf/v3/common";_b "github.com/unidoc/unipdf/v3/internal/bitwise";_bf "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";_c "io";);const (EOF =-3;_dgc =-2;EOL =-1;_dde =8;_bg =(1<<_dde )-1;
+package mmr ;import (_d "errors";_fd "fmt";_fc "github.com/topten1222/unipdf/v3/common";_b "github.com/topten1222/unipdf/v3/internal/bitwise";_bf "github.com/topten1222/unipdf/v3/internal/jbig2/bitmap";_c "io";);const (EOF =-3;_dgc =-2;EOL =-1;_dde =8;_bg =(1<<_dde )-1;
 _gd =5;_ad =(1<<_gd )-1;);func (_abf *Decoder )createLittleEndianTable (_cbb [][3]int )([]*code ,error ){_fed :=make ([]*code ,_bg +1);for _ec :=0;_ec < len (_cbb );_ec ++{_ffb :=_cf (_cbb [_ec ]);if _ffb ._bfb <=_dde {_fba :=_dde -_ffb ._bfb ;_feda :=_ffb ._cb <<uint (_fba );
 for _acf :=(1<<uint (_fba ))-1;_acf >=0;_acf --{_df :=_feda |_acf ;_fed [_df ]=_ffb ;};}else {_cc :=_ffb ._cb >>uint (_ffb ._bfb -_dde );if _fed [_cc ]==nil {var _afa =_cf ([3]int {});_afa ._a =make ([]*code ,_ad +1);_fed [_cc ]=_afa ;};if _ffb ._bfb <=_dde +_gd {_gbd :=_dde +_gd -_ffb ._bfb ;
 _aad :=(_ffb ._cb <<uint (_gbd ))&_ad ;_fed [_cc ]._fa =true ;for _eb :=(1<<uint (_gbd ))-1;_eb >=0;_eb --{_fed [_cc ]._a [_aad |_eb ]=_ffb ;};}else {return nil ,_d .New ("\u0043\u006f\u0064\u0065\u0020\u0074a\u0062\u006c\u0065\u0020\u006f\u0076\u0065\u0072\u0066\u006c\u006f\u0077\u0020i\u006e\u0020\u004d\u004d\u0052\u0044\u0065c\u006f\u0064\u0065\u0072");

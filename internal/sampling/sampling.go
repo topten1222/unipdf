@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sampling ;import (_e "github.com/unidoc/unipdf/v3/internal/bitwise";_c "github.com/unidoc/unipdf/v3/internal/imageutil";_a "io";);func ResampleUint32 (data []uint32 ,bitsPerInputSample int ,bitsPerOutputSample int )[]uint32 {var _ega []uint32 ;
+package sampling ;import (_e "github.com/topten1222/unipdf/v3/internal/bitwise";_c "github.com/topten1222/unipdf/v3/internal/imageutil";_a "io";);func ResampleUint32 (data []uint32 ,bitsPerInputSample int ,bitsPerOutputSample int )[]uint32 {var _ega []uint32 ;
 _egab :=bitsPerOutputSample ;var _cd uint32 ;var _ba uint32 ;_gb :=0;_gdb :=0;_abd :=0;for _abd < len (data ){if _gb > 0{_eec :=_gb ;if _egab < _eec {_eec =_egab ;};_cd =(_cd <<uint (_eec ))|(_ba >>uint (bitsPerInputSample -_eec ));_gb -=_eec ;if _gb > 0{_ba =_ba <<uint (_eec );
 }else {_ba =0;};_egab -=_eec ;if _egab ==0{_ega =append (_ega ,_cd );_egab =bitsPerOutputSample ;_cd =0;_gdb ++;};}else {_fb :=data [_abd ];_abd ++;_fbb :=bitsPerInputSample ;if _egab < _fbb {_fbb =_egab ;};_gb =bitsPerInputSample -_fbb ;_cd =(_cd <<uint (_fbb ))|(_fb >>uint (_gb ));
 if _fbb < bitsPerInputSample {_ba =_fb <<uint (_fbb );};_egab -=_fbb ;if _egab ==0{_ega =append (_ega ,_cd );_egab =bitsPerOutputSample ;_cd =0;_gdb ++;};};};for _gb >=bitsPerOutputSample {_gdd :=_gb ;if _egab < _gdd {_gdd =_egab ;};_cd =(_cd <<uint (_gdd ))|(_ba >>uint (bitsPerInputSample -_gdd ));

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package decoder ;import (_a "github.com/unidoc/unipdf/v3/internal/bitwise";_d "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";_gd "github.com/unidoc/unipdf/v3/internal/jbig2/document";_g "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_b "image";
+package decoder ;import (_a "github.com/topten1222/unipdf/v3/internal/bitwise";_d "github.com/topten1222/unipdf/v3/internal/jbig2/bitmap";_gd "github.com/topten1222/unipdf/v3/internal/jbig2/document";_g "github.com/topten1222/unipdf/v3/internal/jbig2/errors";_b "image";
 );type Parameters struct{UnpaddedData bool ;Color _d .Color ;};func (_cg *Decoder )PageNumber ()(int ,error ){const _ea ="\u0044e\u0063o\u0064\u0065\u0072\u002e\u0050a\u0067\u0065N\u0075\u006d\u0062\u0065\u0072";if _cg ._gda ==nil {return 0,_g .Error (_ea ,"d\u0065\u0063\u006f\u0064\u0065\u0072 \u006e\u006f\u0074\u0020\u0069\u006e\u0069\u0074\u0069a\u006c\u0069\u007ae\u0064 \u0079\u0065\u0074");
 };return int (_cg ._gda .NumberOfPages ),nil ;};func (_bag *Decoder )DecodePageImage (pageNumber int )(_b .Image ,error ){const _ad ="\u0064\u0065\u0063od\u0065\u0072\u002e\u0044\u0065\u0063\u006f\u0064\u0065\u0050\u0061\u0067\u0065\u0049\u006d\u0061\u0067\u0065";
 _aa ,_bf :=_bag .decodePageImage (pageNumber );if _bf !=nil {return nil ,_g .Wrap (_bf ,_ad ,"");};return _aa ,nil ;};func (_aaf *Decoder )decodePage (_af int )([]byte ,error ){const _bd ="\u0064\u0065\u0063\u006f\u0064\u0065\u0050\u0061\u0067\u0065";if _af < 0{return nil ,_g .Errorf (_bd ,"\u0069n\u0076\u0061\u006c\u0069d\u0020\u0070\u0061\u0067\u0065 \u006eu\u006db\u0065\u0072\u003a\u0020\u0027\u0025\u0064'",_af );

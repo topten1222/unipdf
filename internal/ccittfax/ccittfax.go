@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package ccittfax ;import (_c "errors";_fa "github.com/unidoc/unipdf/v3/internal/bitwise";_b "io";_g "math";);func (_baec *Decoder )fetch ()error {if _baec ._ecf ==-1{return nil ;};if _baec ._bb < _baec ._ecf {return nil ;};_baec ._ecf =0;_ce :=_baec .decodeRow ();
+package ccittfax ;import (_c "errors";_fa "github.com/topten1222/unipdf/v3/internal/bitwise";_b "io";_g "math";);func (_baec *Decoder )fetch ()error {if _baec ._ecf ==-1{return nil ;};if _baec ._bb < _baec ._ecf {return nil ;};_baec ._ecf =0;_ce :=_baec .decodeRow ();
 if _ce !=nil {if !_c .Is (_ce ,_b .EOF ){return _ce ;};if _baec ._ecf !=0{return _ce ;};_baec ._ecf =-1;};_baec ._bb =0;return nil ;};func init (){_d =&treeNode {_cdgg :true ,_efe :_ge };_a =&treeNode {_efe :_df ,_ccdfb :_d };_a ._dcecg =_a ;_e =&tree {_adcga :&treeNode {}};
 if _dcg :=_e .fillWithNode (12,0,_a );_dcg !=nil {panic (_dcg .Error ());};if _ba :=_e .fillWithNode (12,1,_d );_ba !=nil {panic (_ba .Error ());};_fd =&tree {_adcga :&treeNode {}};for _ae :=0;_ae < len (_ff );_ae ++{for _fb :=0;_fb < len (_ff [_ae ]);
 _fb ++{if _bcc :=_fd .fill (_ae +2,int (_ff [_ae ][_fb ]),int (_egd [_ae ][_fb ]));_bcc !=nil {panic (_bcc .Error ());};};};if _ef :=_fd .fillWithNode (12,0,_a );_ef !=nil {panic (_ef .Error ());};if _fc :=_fd .fillWithNode (12,1,_d );_fc !=nil {panic (_fc .Error ());

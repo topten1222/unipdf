@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package imageutil ;import (_efc "encoding/binary";_d "errors";_c "fmt";_af "github.com/unidoc/unipdf/v3/common";_ab "github.com/unidoc/unipdf/v3/internal/bitwise";_a "image";_g "image/color";_f "image/draw";_ef "math";);func (_fdeb *Gray8 )Base ()*ImageBase {return &_fdeb .ImageBase };
+package imageutil ;import (_efc "encoding/binary";_d "errors";_c "fmt";_af "github.com/topten1222/unipdf/v3/common";_ab "github.com/topten1222/unipdf/v3/internal/bitwise";_a "image";_g "image/color";_f "image/draw";_ef "math";);func (_fdeb *Gray8 )Base ()*ImageBase {return &_fdeb .ImageBase };
 func _afge (_dfgg ,_ceef RGBA ,_ebac _a .Rectangle ){for _cade :=0;_cade < _ebac .Max .X ;_cade ++{for _bbfcb :=0;_bbfcb < _ebac .Max .Y ;_bbfcb ++{_ceef .SetRGBA (_cade ,_bbfcb ,_dfgg .RGBAAt (_cade ,_bbfcb ));};};};var _ _a .Image =&Gray8 {};func _acc ()(_bcf [256]uint32 ){for _fa :=0;
 _fa < 256;_fa ++{if _fa &0x01!=0{_bcf [_fa ]|=0xf;};if _fa &0x02!=0{_bcf [_fa ]|=0xf0;};if _fa &0x04!=0{_bcf [_fa ]|=0xf00;};if _fa &0x08!=0{_bcf [_fa ]|=0xf000;};if _fa &0x10!=0{_bcf [_fa ]|=0xf0000;};if _fa &0x20!=0{_bcf [_fa ]|=0xf00000;};if _fa &0x40!=0{_bcf [_fa ]|=0xf000000;
 };if _fa &0x80!=0{_bcf [_fa ]|=0xf0000000;};};return _bcf ;};func (_eda *Gray8 )Bounds ()_a .Rectangle {return _a .Rectangle {Max :_a .Point {X :_eda .Width ,Y :_eda .Height }};};func (_eadf monochromeModel )Convert (c _g .Color )_g .Color {_ddaf :=_g .GrayModel .Convert (c ).(_g .Gray );

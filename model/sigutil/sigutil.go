@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sigutil ;import (_g "bytes";_gc "crypto";_bda "crypto/x509";_c "encoding/asn1";_e "encoding/pem";_bg "errors";_de "fmt";_gg "github.com/unidoc/timestamp";_fe "github.com/unidoc/unipdf/v3/common";_fc "golang.org/x/crypto/ocsp";_bd "io";_d "io/ioutil";
+package sigutil ;import (_g "bytes";_gc "crypto";_bda "crypto/x509";_c "encoding/asn1";_e "encoding/pem";_bg "errors";_de "fmt";_gg "github.com/unidoc/timestamp";_fe "github.com/topten1222/unipdf/v3/common";_fc "golang.org/x/crypto/ocsp";_bd "io";_d "io/ioutil";
 _bge "net/http";_f "time";);
 
 // Get retrieves the certificate at the specified URL.

@@ -12,9 +12,9 @@
 // Package core defines and implements the primitive PDF object types in golang, and provides functionality
 // for parsing those from a PDF file stream. This includes I/O handling, cross references, repairs, encryption,
 // encoding and other core capabilities.
-package core ;import (_fd "bufio";_d "bytes";_ag "compress/lzw";_ecd "compress/zlib";_fff "crypto/md5";_fc "crypto/rand";_ac "encoding/hex";_a "errors";_ea "fmt";_df "github.com/unidoc/unipdf/v3/common";_gb "github.com/unidoc/unipdf/v3/core/security";_gc "github.com/unidoc/unipdf/v3/core/security/crypt";
-_dc "github.com/unidoc/unipdf/v3/internal/ccittfax";_cf "github.com/unidoc/unipdf/v3/internal/imageutil";_db "github.com/unidoc/unipdf/v3/internal/jbig2";_dg "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";_gg "github.com/unidoc/unipdf/v3/internal/jbig2/decoder";
-_ecdf "github.com/unidoc/unipdf/v3/internal/jbig2/document";_dd "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_gf "github.com/unidoc/unipdf/v3/internal/strutils";_cd "golang.org/x/image/tiff/lzw";_aa "golang.org/x/xerrors";_ff "image";_fe "image/color";
+package core ;import (_fd "bufio";_d "bytes";_ag "compress/lzw";_ecd "compress/zlib";_fff "crypto/md5";_fc "crypto/rand";_ac "encoding/hex";_a "errors";_ea "fmt";_df "github.com/topten1222/unipdf/v3/common";_gb "github.com/topten1222/unipdf/v3/core/security";_gc "github.com/topten1222/unipdf/v3/core/security/crypt";
+_dc "github.com/topten1222/unipdf/v3/internal/ccittfax";_cf "github.com/topten1222/unipdf/v3/internal/imageutil";_db "github.com/topten1222/unipdf/v3/internal/jbig2";_dg "github.com/topten1222/unipdf/v3/internal/jbig2/bitmap";_gg "github.com/topten1222/unipdf/v3/internal/jbig2/decoder";
+_ecdf "github.com/topten1222/unipdf/v3/internal/jbig2/document";_dd "github.com/topten1222/unipdf/v3/internal/jbig2/errors";_gf "github.com/topten1222/unipdf/v3/internal/strutils";_cd "golang.org/x/image/tiff/lzw";_aa "golang.org/x/xerrors";_ff "image";_fe "image/color";
 _bg "image/jpeg";_gd "io";_bc "io/ioutil";_e "reflect";_f "regexp";_g "sort";_be "strconv";_cb "strings";_c "sync";_eca "time";_ec "unicode";);
 
 // PdfIndirectObject represents the primitive PDF indirect object.

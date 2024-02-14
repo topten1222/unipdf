@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package basic ;import _d "github.com/unidoc/unipdf/v3/internal/jbig2/errors";func (_bgc *NumSlice )Add (v float32 ){*_bgc =append (*_bgc ,v )};func (_a IntsMap )Get (key uint64 )(int ,bool ){_eg ,_ege :=_a [key ];if !_ege {return 0,false ;};if len (_eg )==0{return 0,false ;
+package basic ;import _d "github.com/topten1222/unipdf/v3/internal/jbig2/errors";func (_bgc *NumSlice )Add (v float32 ){*_bgc =append (*_bgc ,v )};func (_a IntsMap )Get (key uint64 )(int ,bool ){_eg ,_ege :=_a [key ];if !_ege {return 0,false ;};if len (_eg )==0{return 0,false ;
 };return _eg [0],true ;};func (_be IntsMap )GetSlice (key uint64 )([]int ,bool ){_g ,_f :=_be [key ];if !_f {return nil ,false ;};return _g ,true ;};func (_gb *Stack )Len ()int {return len (_gb .Data )};func (_bb IntSlice )Size ()int {return len (_bb )};
 func (_ae *IntSlice )Add (v int )error {if _ae ==nil {return _d .Error ("\u0049\u006e\u0074S\u006c\u0069\u0063\u0065\u002e\u0041\u0064\u0064","\u0073\u006c\u0069\u0063\u0065\u0020\u006e\u006f\u0074\u0020\u0064\u0065f\u0069\u006e\u0065\u0064");};*_ae =append (*_ae ,v );
 return nil ;};func (_bg *IntSlice )Copy ()*IntSlice {_ge :=IntSlice (make ([]int ,len (*_bg )));copy (_ge ,*_bg );return &_ge ;};func (_cb *Stack )top ()int {return len (_cb .Data )-1};func (_ca *Stack )Push (v interface{}){_ca .Data =append (_ca .Data ,v )};
